@@ -20,6 +20,16 @@ export function Servicios() {
         </svg>
       ),
     },
+    {
+      titulo: "Lavado y desinfección",
+      descripcion:
+        "Servicio de lavado y desinfección de acoplados, máquinas agrícolas y equipos. Limpieza profunda y sanitización para garantizar condiciones higiénicas y fitosanitarias adecuadas.",
+      icono: (
+        <svg className="h-10 w-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+        </svg>
+      ),
+    },
   ];
 
   return (
@@ -35,7 +45,7 @@ export function Servicios() {
           Prestamos servicios a empresas operadoras logísticas en el Complejo Terminal de Cargas (CO.TE.CAR) cuando SENASA solicita medidas fitosanitarias.
         </p>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-2">
+        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {servicios.map((s) => (
             <div
               key={s.titulo}
